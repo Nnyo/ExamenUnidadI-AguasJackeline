@@ -1,28 +1,52 @@
 open class Course (var id : Int, var name : String, var description : String) {
-/*
-    fun getId () : Int {
-        return this.id;
-    }
 
-    fun setId(id : Int) {
-        this.id = id;
-    }
+        open fun addCocina(cursoProg: ProgramingCourse): String {
 
-    fun getName () : String {
-        return this.name;
-    }
+            return "Registro exitoso"
+        }
 
-    fun setName (name : String) {
-        this.name = name;
-    }
+        open fun updateCocina(): String {
 
-    fun getDescriptin () : String {
-        return this.description;
-    }
+            return "Modificación exitosa"
+        }
 
-    fun setDescription (description: String) {
-        this.description = description;
+        open fun eliminarCocina(): String {
+
+            return "Eliminacion Exitosa"
+        }
+
+        
+        open fun getCocina(id: Int): ProgramingCourse {
+
+               return listaCursos.[id]
+        }
+         
+
+
+        open fun addProgra(cursoProg: ProgramingCourse): String {
+
+            return "Registro exitoso"
+        }
+
+        open fun updateProgra(): String {
+
+            return "Modificación exitosa"
+        }
+
+        open fun eliminarProgra(): String {
+
+            return "Eliminacion Exitosa"
+        }
+
+        
+        open fun getProgra(id: Int): ProgramingCourse {
+
+               return listaCursos.[id]
+        }
+         
+
     }
-    */
+    
+
 
 }
