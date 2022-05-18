@@ -1,5 +1,5 @@
 open class Course (var id : Int, var name : String, var description : String) {
-
+/*
     fun getId () : Int {
         return this.id;
     }
@@ -23,5 +23,6 @@ open class Course (var id : Int, var name : String, var description : String) {
     fun setDescription (description: String) {
         this.description = description;
     }
+    */
 
 }
