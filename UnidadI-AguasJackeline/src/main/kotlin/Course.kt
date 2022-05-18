@@ -1,10 +1,5 @@
 open class Course (var id : Int, var name : String, var description : String) {
 
-    companion object {
-        //Aqui van las listas globales
-        var listaCursosCocina =  mutableListOf<CookingCourse>()
-        var listaCursosPrograming =  mutableListOf<ProgramingCourse>()
-
         open fun addCocina(cursoProg: ProgramingCourse): String {
 
             return "Registro exitoso"
@@ -20,12 +15,12 @@ open class Course (var id : Int, var name : String, var description : String) {
             return "Eliminacion Exitosa"
         }
 
-        /*
+        
         open fun getCocina(id: Int): ProgramingCourse {
 
                return listaCursos.[id]
         }
-         */
+         
 
 
         open fun addProgra(cursoProg: ProgramingCourse): String {
@@ -43,14 +38,15 @@ open class Course (var id : Int, var name : String, var description : String) {
             return "Eliminacion Exitosa"
         }
 
-        /*
+        
         open fun getProgra(id: Int): ProgramingCourse {
 
                return listaCursos.[id]
         }
-         */
+         
 
     }
+    
 
 
 }
