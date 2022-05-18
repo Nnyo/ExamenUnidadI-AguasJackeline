@@ -1,27 +1,56 @@
 open class Course (var id : Int, var name : String, var description : String) {
 
-    fun getId () : Int {
-        return this.id;
+    companion object {
+        //Aqui van las listas globales
+        var listaCursosCocina =  mutableListOf<CookingCourse>()
+        var listaCursosPrograming =  mutableListOf<ProgramingCourse>()
+
+        open fun addCocina(cursoProg: ProgramingCourse): String {
+
+            return "Registro exitoso"
+        }
+
+        open fun updateCocina(): String {
+
+            return "Modificación exitosa"
+        }
+
+        open fun eliminarCocina(): String {
+
+            return "Eliminacion Exitosa"
+        }
+
+        /*
+        open fun getCocina(id: Int): ProgramingCourse {
+
+               return listaCursos.[id]
+        }
+         */
+
+
+        open fun addProgra(cursoProg: ProgramingCourse): String {
+
+            return "Registro exitoso"
+        }
+
+        open fun updateProgra(): String {
+
+            return "Modificación exitosa"
+        }
+
+        open fun eliminarProgra(): String {
+
+            return "Eliminacion Exitosa"
+        }
+
+        /*
+        open fun getProgra(id: Int): ProgramingCourse {
+
+               return listaCursos.[id]
+        }
+         */
+
     }
 
-    fun setId(id : Int) {
-        this.id = id;
-    }
-
-    fun getName () : String {
-        return this.name;
-    }
-
-    fun setName (name : String) {
-        this.name = name;
-    }
-
-    fun getDescriptin () : String {
-        return this.description;
-    }
-
-    fun setDescription (description: String) {
-        this.description = description;
-    }
 
 }
