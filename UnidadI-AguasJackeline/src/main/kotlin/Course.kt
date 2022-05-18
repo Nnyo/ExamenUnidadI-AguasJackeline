@@ -1,34 +1,28 @@
 open class Course (var id : Int, var name : String, var description : String) {
 
-        open fun addCocina(cursoProg: ProgramingCourse): String {
+        companion object {
+            //Aqui van las listas globales
+            var listaCursosCocina =  mutableListOf<CookingCourse>()
+            var listaCursosPrograming =  mutableListOf<ProgramingCourse>()
+        }
+
+        open fun add(cursoProg: ProgramingCourse): String {
 
             return "Registro exitoso"
         }
 
-        open fun updateCocina(): String {
+        open fun update(): String {
 
             return "Modificación exitosa"
         }
 
-        open fun eliminarCocina(): String {
+        open fun eliminar(): String {
 
             return "Eliminacion Exitosa"
         }
+        
+        open fun get(id: Int): String {
 
-        open fun addProgra(cursoProg: ProgramingCourse): String {
-
-            return "Registro exitoso"
+               return "Consulta"
         }
-
-        open fun updateProgra(): String {
-
-            return "Modificación exitosa"
-        }
-
-        open fun eliminarProgra(): String {
-
-            return "Eliminacion Exitosa"
-        }
-         
-
-    }
+}
